@@ -60,7 +60,7 @@ class ScrollAnimation {
     for (let i = this.startFrame; i <= this.endFrame; i++) {
       const img = new Image();
       const frameNumber = String(i).padStart(3, '0');
-      img.src = `assets/ezgif-frame-${frameNumber}.jpg`;
+      img.src = `/assets/ezgif-frame-${frameNumber}.jpg`;
 
       // Track loading progress
       const promise = new Promise((resolve, reject) => {
