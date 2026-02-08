@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn how to brew the perfect cup of Bravato coffee with our comprehensive guide.">
+    <title>Brew Guide - Bravato Coffee</title>
+
+    <!-- Stylesheets -->
+
+    <style>
+        .brew-step {
+            background: var(--color-espresso-light);
+            border-left: 4px solid var(--color-highlight-gold);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            border-radius: 4px;
+            transition: var(--transition-medium);
+        }
+
+        .brew-step:hover {
+            background: var(--color-espresso-medium);
+            transform: translateX(8px);
+        }
+
+        .brew-step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--color-highlight-gold);
+            color: var(--color-espresso-dark);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+            margin-right: var(--spacing-sm);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .brew-method-card {
+            background: var(--color-espresso-light);
+            border: 2px solid rgba(212, 165, 116, 0.2);
+            border-radius: 8px;
+            padding: var(--spacing-lg);
+            transition: var(--transition-medium);
+            cursor: pointer;
+        }
+
+        .brew-method-card:hover {
+            border-color: var(--color-highlight-gold);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .brew-method-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        .ratio-box {
+            background: rgba(212, 165, 116, 0.1);
+            border: 2px solid var(--color-highlight-gold);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            text-align: center;
+            margin: var(--spacing-md) 0;
+        }
+
+        .ratio-number {
+            font-family: 'Playfair Display', serif;
+            font-size: var(--font-size-3xl);
+            color: var(--color-highlight-gold);
+            font-weight: 700;
+        }
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/main-DCBPjSfI.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">BRAVATO</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brew-guide.html">Brew Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section"
+        style="padding-top: calc(70px + var(--spacing-2xl)); background: linear-gradient(180deg, var(--color-espresso-dark) 0%, var(--color-espresso-light) 100%); min-height: 50vh; display: flex; align-items: center;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 class="mb-md fade-in-element">Brew Guide</h1>
+                <p class="text-large fade-in-element">Great coffee deserves great brewing. Master the fundamentals and
+                    elevate your daily ritual.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Fundamentals -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-element">The Fundamentals</h2>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h4 class="mb-sm">Fresh Coffee</h4>
+                    <p>Use coffee within 2-4 weeks of roasting for optimal flavor. Store in an airtight container away
+                        from light and heat.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Grind Fresh</h4>
+                    <p>Always grind just before brewing. Pre-ground coffee loses flavor rapidly. Adjust grind size based
+                        on your brew method.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Water Quality</h4>
+                    <p>Use filtered water heated to 195-205°F (90-96°C). Water quality directly impacts your coffee's
+                        taste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee-to-Water Ratio -->
+    <section class="section" style="background: var(--color-espresso-light);">
+        <div class="container">
+            <h2 class="section-title fade-in-element">The Golden Ratio</h2>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="ratio-box fade-in-element">
+                    <div class="ratio-number">1:16</div>
+                    <p class="text-large mb-sm">Coffee to Water Ratio</p>
+                    <p class="text-small text-muted">
+                        For every 1 gram of coffee, use 16 grams (ml) of water.<br>
+                        Example: 20g coffee → 320ml water
+                    </p>
+                </div>
+
+                <p class="text-center text-muted fade-in-element">
+                    This is a starting point. Adjust to taste: use more coffee for stronger brew, less for lighter.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brew Methods -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-element">Brew Methods</h2>
+
+            <div class="grid grid-3 mb-xl">
+                <div class="brew-method-card">
+                    <span class="brew-method-icon">☕</span>
+                    <h4 class="mb-sm">Pour Over</h4>
+                    <p class="text-small">Clean, bright, and nuanced. Perfect for highlighting single-origin
+                        characteristics.</p>
+                </div>
+
+                <div class="brew-method-card">
+                    <span class="brew-method-icon">🫖</span>
+                    <h4 class="mb-sm">French Press</h4>
+                    <p class="text-small">Full-bodied and rich. Ideal for darker roasts and those who prefer texture.
+                    </p>
+                </div>
+
+                <div class="brew-method-card">
+                    <span class="brew-method-icon">⚗️</span>
+                    <h4 class="mb-sm">Espresso</h4>
+                    <p class="text-small">Concentrated and intense. The foundation for lattes, cappuccinos, and more.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pour Over Instructions -->
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h3 class="mb-md text-center fade-in-element">Pour Over Method</h3>
+
+                <div class="brew-step">
+                    <span class="brew-step-number">1</span>
+                    <strong>Heat Water</strong>
+                    <p class="text-small mt-sm">Bring filtered water to 200°F (93°C). Let boiling water rest for 30
+                        seconds.</p>
+                </div>
+
+                <div class="brew-step">
+                    <span class="brew-step-number">2</span>
+                    <strong>Prepare Filter</strong>
+                    <p class="text-small mt-sm">Place filter in dripper and rinse with hot water. This removes paper
+                        taste and preheats your vessel.</p>
+                </div>
+
+                <div class="brew-step">
+                    <span class="brew-step-number">3</span>
+                    <strong>Grind Coffee</strong>
+                    <p class="text-small mt-sm">Grind 20g of coffee to medium-fine consistency (like sea salt). Add to
+                        filter and create a flat bed.</p>
+                </div>
+
+                <div class="brew-step">
+                    <span class="brew-step-number">4</span>
+                    <strong>Bloom</strong>
+                    <p class="text-small mt-sm">Pour 40ml of water in a circular motion to saturate grounds. Wait 30-45
+                        seconds for bloom.</p>
+                </div>
+
+                <div class="brew-step">
+                    <span class="brew-step-number">5</span>
+                    <strong>Pour</strong>
+                    <p class="text-small mt-sm">Slowly pour remaining water (280ml total) in concentric circles.
+                        Maintain steady flow. Total brew time: 2:30-3:00.</p>
+                </div>
+
+                <div class="brew-step">
+                    <span class="brew-step-number">6</span>
+                    <strong>Enjoy</strong>
+                    <p class="text-small mt-sm">Remove dripper, swirl gently, and enjoy immediately. Notice the clarity
+                        and complexity of flavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Tricks -->
+    <section class="section" style="background: var(--color-espresso-light);">
+        <div class="container">
+            <h2 class="section-title fade-in-element">Pro Tips</h2>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h4 class="mb-sm">Grind Size Matters</h4>
+                    <p><strong>Espresso:</strong> Fine (like table salt)<br>
+                        <strong>Pour Over:</strong> Medium-fine (like sea salt)<br>
+                        <strong>French Press:</strong> Coarse (like breadcrumbs)
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Troubleshooting</h4>
+                    <p><strong>Too bitter?</strong> Lower water temp or use less coffee<br>
+                        <strong>Too sour?</strong> Increase water temp or grind finer<br>
+                        <strong>Weak flavor?</strong> Use more coffee or grind finer
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Storage Tips</h4>
+                    <p>Keep beans in an airtight container in a cool, dark place. Never refrigerate or freeze. Buy in
+                        quantities you'll use within 2-3 weeks.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Experiment</h4>
+                    <p>These are guidelines, not rules. Adjust ratios, temperatures, and times to find your perfect cup.
+                        Keep notes on what works.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="text-align: center;">
+        <div class="container">
+            <h2 class="mb-md fade-in-element">Ready to Brew?</h2>
+            <p class="text-large mb-lg text-muted fade-in-element"
+                style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                Put your new knowledge to use with our premium coffee collection.
+            </p>
+            <a href="products.html" class="btn btn-primary fade-in-element">Shop Coffee</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bravato</h4>
+                    <p>Premium coffee crafted with discipline and passion.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="brew-guide.html">Brew Guide</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@bravato.coffee</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bravato Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/page-animations.js"></script>
+
+</body>
+
+</html>

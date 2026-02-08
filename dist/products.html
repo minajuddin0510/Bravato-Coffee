@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Bravato's premium coffee collection. Single-origin beans and signature blends.">
+    <title>Products - Bravato Coffee</title>
+
+    <!-- Stylesheets -->
+
+    <style>
+        .product-card {
+            background: var(--color-espresso-light);
+            border: 1px solid rgba(212, 165, 116, 0.1);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            transition: var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-highlight-gold), var(--color-brown-medium));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition-medium);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 165, 116, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--color-brown-dark), var(--color-espresso-medium));
+            border-radius: 4px;
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image::after {
+            content: '☕';
+            filter: opacity(0.3);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: var(--spacing-sm);
+            right: var(--spacing-sm);
+            background: var(--color-highlight-gold);
+            color: var(--color-espresso-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .product-title {
+            font-size: var(--font-size-xl);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-origin {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .product-description {
+            flex-grow: 1;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .product-notes {
+            background: rgba(212, 165, 116, 0.1);
+            padding: var(--spacing-sm);
+            border-radius: 4px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .product-notes strong {
+            color: var(--color-highlight-gold);
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .product-price {
+            font-family: 'Playfair Display', serif;
+            font-size: var(--font-size-2xl);
+            color: var(--color-highlight-gold);
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/main-DCBPjSfI.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">BRAVATO</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brew-guide.html">Brew Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section"
+        style="padding-top: calc(70px + var(--spacing-2xl)); background: linear-gradient(180deg, var(--color-espresso-dark) 0%, var(--color-espresso-light) 100%); min-height: 50vh; display: flex; align-items: center;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 class="mb-md fade-in-element">Our Collection</h1>
+                <p class="text-large fade-in-element">Meticulously sourced, expertly roasted, and crafted for those who
+                    demand excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Blends -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-element">Signature Blends</h2>
+
+            <div class="grid grid-3">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <h3 class="product-title">Bravato Signature</h3>
+                    <p class="product-origin">Ethiopia · Colombia · Brazil</p>
+                    <p class="product-description">
+                        Our flagship blend. A harmonious combination of three exceptional origins, creating a balanced
+                        cup with complexity and depth.
+                    </p>
+                    <div class="product-notes">
+                        <strong>Tasting Notes:</strong>
+                        <p class="text-small">Dark chocolate, caramel, citrus</p>
+                    </div>
+                    <div class="product-price">$18.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3 class="product-title">Morning Ritual</h3>
+                    <p class="product-origin">Guatemala · Costa Rica</p>
+                    <p class="product-description">
+                        Bright and energizing. Perfect for starting your day with clarity and focus. Smooth, clean, and
+                        endlessly drinkable.
+                    </p>
+                    <div class="product-notes">
+                        <strong>Tasting Notes:</strong>
+                        <p class="text-small">Honey, almond, bright acidity</p>
+                    </div>
+                    <div class="product-price">$16.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3 class="product-title">Midnight Roast</h3>
+                    <p class="product-origin">Sumatra · Brazil</p>
+                    <p class="product-description">
+                        Bold and intense. For those who prefer their coffee dark and powerful. Full-bodied with a
+                        lingering finish.
+                    </p>
+                    <div class="product-notes">
+                        <strong>Tasting Notes:</strong>
+                        <p class="text-small">Dark cocoa, toasted nuts, earthy</p>
+                    </div>
+                    <div class="product-price">$17.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Single Origin -->
+    <section class="section" style="background: var(--color-espresso-light);">
+        <div class="container">
+            <h2 class="section-title fade-in-element">Single Origin</h2>
+            <p class="section-subtitle fade-in-element">Experience the unique characteristics of coffee from a single
+                region.</p>
+
+            <div class="grid grid-3">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Limited</span>
+                    </div>
+                    <h3 class="product-title">Ethiopian Yirgacheffe</h3>
+                    <p class="product-origin">Yirgacheffe, Ethiopia</p>
+                    <p class="product-description">
+                        Floral and tea-like. This naturally processed coffee showcases the delicate complexity that
+                        Ethiopian beans are famous for.
+                    </p>
+                    <div class="product-notes">
+                        <strong>Tasting Notes:</strong>
+                        <p class="text-small">Blueberry, jasmine, bergamot</p>
+                    </div>
+                    <div class="product-price">$22.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3 class="product-title">Colombian Supremo</h3>
+                    <p class="product-origin">Huila, Colombia</p>
+                    <p class="product-description">
+                        Classic and refined. Grown at high altitude, this coffee delivers the balanced sweetness
+                        Colombia is known for.
+                    </p>
+                    <div class="product-notes">
+                        <strong>Tasting Notes:</strong>
+                        <p class="text-small">Caramel, red apple, smooth body</p>
+                    </div>
+                    <div class="product-price">$19.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <h3 class="product-title">Kenyan AA</h3>
+                    <p class="product-origin">Nyeri, Kenya</p>
+                    <p class="product-description">
+                        Vibrant and complex. Known for its wine-like acidity and full body, this is coffee for the
+                        adventurous palate.
+                    </p>
+                    <div class="product-notes">
+                        <strong>Tasting Notes:</strong>
+                        <p class="text-small">Blackcurrant, tomato, bright acidity</p>
+                    </div>
+                    <div class="product-price">$21.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Bravato -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-element">Why Choose Bravato</h2>
+
+            <div class="grid grid-2" style="gap: var(--spacing-lg);">
+                <div class="card">
+                    <h4 class="mb-sm">Freshness Guaranteed</h4>
+                    <p>We roast to order. Your coffee is roasted within 48 hours of shipping, ensuring maximum freshness
+                        and flavor.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Direct Trade</h4>
+                    <p>We work directly with farmers, ensuring fair prices and the highest quality beans. No middlemen,
+                        just great coffee.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Small Batch Roasting</h4>
+                    <p>Every batch is carefully monitored and roasted to perfection. We never compromise quality for
+                        quantity.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Sustainable Packaging</h4>
+                    <p>Our bags are 100% recyclable and feature a one-way valve to keep your coffee fresh without
+                        harming the planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: var(--color-espresso-light); text-align: center;">
+        <div class="container">
+            <h2 class="mb-md fade-in-element">Not Sure Where to Start?</h2>
+            <p class="text-large mb-lg text-muted fade-in-element"
+                style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                Check out our brew guide to learn how to get the most out of your Bravato coffee.
+            </p>
+            <a href="brew-guide.html" class="btn btn-primary fade-in-element">View Brew Guide</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bravato</h4>
+                    <p>Premium coffee crafted with discipline and passion.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="brew-guide.html">Brew Guide</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@bravato.coffee</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bravato Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/page-animations.js"></script>
+
+</body>
+
+</html>

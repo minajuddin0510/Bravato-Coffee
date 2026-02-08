@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Bravato Coffee. We'd love to hear from you.">
+    <title>Contact - Bravato Coffee</title>
+
+    <!-- Stylesheets -->
+
+    <style>
+        .contact-form {
+            background: var(--color-espresso-light);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 8px;
+            padding: var(--spacing-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--color-highlight-gold);
+            margin-bottom: 0.5rem;
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            background: var(--color-espresso-medium);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 4px;
+            color: var(--color-text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: var(--font-size-base);
+            transition: var(--transition-fast);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--color-highlight-gold);
+            box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-info-card {
+            background: var(--color-espresso-light);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 8px;
+            padding: var(--spacing-lg);
+            text-align: center;
+            transition: var(--transition-medium);
+        }
+
+        .contact-info-card:hover {
+            border-color: var(--color-highlight-gold);
+            transform: translateY(-4px);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        .contact-info-card h4 {
+            color: var(--color-highlight-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-card a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .contact-info-card a:hover {
+            color: var(--color-highlight-gold);
+        }
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/main-DCBPjSfI.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">BRAVATO</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="brew-guide.html">Brew Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section"
+        style="padding-top: calc(70px + var(--spacing-2xl)); background: linear-gradient(180deg, var(--color-espresso-dark) 0%, var(--color-espresso-light) 100%); min-height: 50vh; display: flex; align-items: center;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 class="mb-md fade-in-element">Get in Touch</h1>
+                <p class="text-large fade-in-element">Have questions? Want to learn more? We'd love to hear from you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3 mb-xl">
+                <div class="contact-info-card">
+                    <span class="contact-icon">📧</span>
+                    <h4>Email Us</h4>
+                    <a href="mailto:hello@bravato.coffee">hello@bravato.coffee</a>
+                    <p class="text-small text-muted mt-sm">We respond within 24 hours</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <span class="contact-icon">📞</span>
+                    <h4>Call Us</h4>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    <p class="text-small text-muted mt-sm">Mon-Fri, 9am-6pm EST</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <span class="contact-icon">📍</span>
+                    <h4>Visit Us</h4>
+                    <p>123 Coffee Lane<br>Portland, OR 97201</p>
+                    <p class="text-small text-muted mt-sm">Tasting room open daily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" style="background: var(--color-espresso-dark);">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto;">
+                <h2 class="text-center mb-md fade-in-element">Send Us a Message</h2>
+                <p class="text-center text-muted mb-lg fade-in-element">Fill out the form below and we'll get back to
+                    you as soon as possible.</p>
+
+                <form class="contact-form fade-in-element">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Question</option>
+                            <option value="wholesale">Wholesale Opportunities</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Tell us what's on your mind..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-element">Frequently Asked Questions</h2>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card mb-md">
+                    <h4 class="mb-sm">How long does shipping take?</h4>
+                    <p>We roast to order and ship within 48 hours. Standard shipping takes 3-5 business days. Expedited
+                        options available at checkout.</p>
+                </div>
+
+                <div class="card mb-md">
+                    <h4 class="mb-sm">Do you offer subscriptions?</h4>
+                    <p>Yes! Our subscription service delivers fresh coffee to your door on your schedule. Save 15% on
+                        all subscription orders.</p>
+                </div>
+
+                <div class="card mb-md">
+                    <h4 class="mb-sm">What's your return policy?</h4>
+                    <p>We stand behind our coffee. If you're not satisfied, contact us within 30 days for a full refund
+                        or replacement.</p>
+                </div>
+
+                <div class="card mb-md">
+                    <h4 class="mb-sm">Do you offer wholesale?</h4>
+                    <p>Absolutely. We partner with cafes, restaurants, and offices. Email us at wholesale@bravato.coffee
+                        for more information.</p>
+                </div>
+
+                <div class="card">
+                    <h4 class="mb-sm">Can I visit your roastery?</h4>
+                    <p>Yes! Our tasting room is open Monday-Saturday, 9am-5pm. Tours available by appointment. We'd love
+                        to show you around.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="section" style="background: var(--color-espresso-light); text-align: center;">
+        <div class="container">
+            <h2 class="mb-md fade-in-element">Follow Our Journey</h2>
+            <p class="text-large mb-lg text-muted fade-in-element">
+                Join our community on social media for brewing tips, new releases, and behind-the-scenes content.
+            </p>
+
+            <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;"
+                class="fade-in-element">
+                <a href="#" class="btn btn-secondary">Instagram</a>
+                <a href="#" class="btn btn-secondary">Facebook</a>
+                <a href="#" class="btn btn-secondary">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bravato</h4>
+                    <p>Premium coffee crafted with discipline and passion.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="brew-guide.html">Brew Guide</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@bravato.coffee</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bravato Coffee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/page-animations.js"></script>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+
+</body>
+
+</html>
