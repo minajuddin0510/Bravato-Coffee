@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bravato - Premium coffee crafted with discipline and passion. Experience the art of coffee.">
+  <title>Bravato - Premium Coffee Craft</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/scroll-animation.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">BRAVATO</a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="brew-guide.html">Brew Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress"></div>
+  
+  <!-- Hero Section - Scroll-Controlled Animation -->
+  <section class="hero-scroll-container">
+    <div class="hero-canvas-wrapper">
+      <!-- Loading Indicator -->
+      <div class="hero-loading">
+        <div class="loading-text">BRAVATO</div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      </div>
+      
+      <!-- Canvas for Image Sequence -->
+      <canvas id="hero-canvas"></canvas>
+      
+      <!-- Hero Text Overlay -->
+      <div class="hero-text-overlay">
+        <h1 class="text-gradient">Crafted with Discipline</h1>
+        <p>Where precision meets passion in every cup</p>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <svg viewBox="0 0 30 50">
+          <rect x="5" y="5" width="20" height="35" rx="10" />
+          <circle cx="15" cy="15" r="3">
+            <animate attributeName="cy" from="15" to="30" dur="1.5s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Post-Animation Content -->
+  <div class="post-hero-content">
+    
+    <!-- What is Bravato Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title fade-in-element">
+          <h2>The Bravato Philosophy</h2>
+          <p class="section-subtitle">Coffee is not just a beverage—it's a ritual, a craft, a moment of clarity in a chaotic world.</p>
+        </div>
+        
+        <div class="grid grid-3">
+          <div class="card">
+            <h4>Precision</h4>
+            <p>Every bean is selected with meticulous care. Every roast is timed to perfection. We believe excellence lives in the details.</p>
+          </div>
+          
+          <div class="card">
+            <h4>Discipline</h4>
+            <p>Our process is unwavering. From sourcing to brewing, we maintain the highest standards without compromise.</p>
+          </div>
+          
+          <div class="card">
+            <h4>Passion</h4>
+            <p>Behind every cup is a team dedicated to the art of coffee. We don't just make coffee—we craft experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Signature Product Highlight -->
+    <section class="section" style="background: linear-gradient(180deg, var(--color-espresso-dark) 0%, var(--color-espresso-light) 100%);">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+          <h2 class="mb-md fade-in-element">Signature Blend</h2>
+          <p class="text-large mb-lg fade-in-element">Our flagship blend combines single-origin beans from Ethiopia, Colombia, and Brazil. The result is a complex, balanced cup with notes of dark chocolate, caramel, and a hint of citrus.</p>
+          
+          <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;" class="fade-in-element">
+            <a href="products.html" class="btn btn-primary">Explore Products</a>
+            <a href="brew-guide.html" class="btn btn-secondary">Learn to Brew</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Craft Values -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title fade-in-element">Our Craft Values</h2>
+        
+        <div class="grid grid-2" style="gap: var(--spacing-lg); align-items: start;">
+          <div class="slide-in-left-element">
+            <h3 class="mb-sm">Sourcing Excellence</h3>
+            <p class="mb-md">We partner directly with farmers who share our commitment to quality. Every bean is traceable to its origin, ensuring transparency and ethical practices.</p>
+            
+            <h3 class="mb-sm">Roasting Mastery</h3>
+            <p>Our roasting process is both an art and a science. We use small-batch roasting to bring out the unique characteristics of each bean variety.</p>
+          </div>
+          
+          <div class="slide-in-right-element">
+            <h3 class="mb-sm">Sustainable Practices</h3>
+            <p class="mb-md">We believe in leaving the world better than we found it. Our packaging is 100% recyclable, and we offset our carbon footprint through reforestation programs.</p>
+            
+            <h3 class="mb-sm">Community First</h3>
+            <p>Coffee brings people together. We invest in the communities that grow our beans and the communities that enjoy them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="section" style="background: var(--color-espresso-light); text-align: center;">
+      <div class="container">
+        <h2 class="mb-md fade-in-element">Begin Your Journey</h2>
+        <p class="text-large mb-lg text-muted fade-in-element" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+          Discover the difference that discipline and passion make. Explore our collection and find your perfect brew.
+        </p>
+        <a href="products.html" class="btn btn-primary fade-in-element">Shop Now</a>
+      </div>
+    </section>
+    
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Bravato</h4>
+          <p>Premium coffee crafted with discipline and passion.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="brew-guide.html">Brew Guide</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>hello@bravato.coffee</p>
+          <p>+1 (555) 123-4567</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bravato Coffee. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/scroll-animation.js"></script>
+  <script src="js/page-animations.js"></script>
+  
+</body>
+</html>
