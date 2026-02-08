@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Bravato - Premium coffee crafted with discipline and passion",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
